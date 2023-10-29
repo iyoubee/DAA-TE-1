@@ -30,7 +30,7 @@ public class RadixSortUsingCountingSort {
             Integer[] numbersArray = numbersList.toArray(new Integer[numbersList.size()]);
             reader.close();
 
-            // Lakukan PeekSort
+            // Lakukan RadixSort
             long startTime = System.currentTimeMillis();
             Runtime runtime = Runtime.getRuntime();
             radixSort(numbersArray);
@@ -40,7 +40,6 @@ public class RadixSortUsingCountingSort {
             System.out.println("Waktu eksekusi: " + executionTime + " milidetik");
             System.out.println("Penggunaan memori: " + (usedMemory) + " byte");
             saveToTextFile(numbersArray, "output2.txt");
-
         } catch (IOException e) {
             System.err.println("Terjadi kesalahan saat membaca file.");
             e.printStackTrace();
