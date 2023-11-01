@@ -100,17 +100,12 @@ public class RadixSortUsingCountingSort {
     }
 
     /**
-     * Prints the elements of an array to the console.
+     * Finds the maximum value in the given array.
      *
-     * @param arr The array to be printed.
+     * @param array The array in which to find the maximum value.
+     * @return The maximum value in the array, or null if the array is empty or
+     *         null.
      */
-    public static void printArray(int[] arr) {
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
-
     public static Integer findMax(Integer[] array) {
         if (array == null || array.length == 0) {
             return null; // Handle empty or null array

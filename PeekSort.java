@@ -182,18 +182,6 @@ public class PeekSort {
     }
 
     /**
-     * Prints the elements of an array to the console.
-     *
-     * @param arr The array to be printed.
-     */
-    public static void printArray(int[] arr) {
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
-
-    /**
      * Saves an array of integers to a text file.
      *
      * @param data     The array of integers to be saved to the file.
