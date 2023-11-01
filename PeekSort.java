@@ -122,9 +122,8 @@ public class PeekSort {
      * @return The new position.
      */
     public static int extendRunLeft(Integer[] A, int i, int left) {
-        while (i > left && A[i - 1] <= A[i]) {
+        while (i > left && A[i - 1] <= A[i])
             --i;
-        }
         return i;
     }
 
